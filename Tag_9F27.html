@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMV Decoding</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div>
+        <header>
+            <a href="https://codigo369.com/" target="_blank" class="logo">
+                <img src="favicon.png" alt="logo">
+            </a>
+            <h2 class="nombre-empresa">TAG 9F27<br>Cryptogram Information Data (CID)</h2>
+            <nav>
+                <a href="index.html" class="nav-link">Back</a>
+            </nav>
+        </header>
+        <p>The Cryptogram Information Data returned in the GENERATE AC response message is coded according to Table CCD 3:</p>
+        <table>
+            <tr>
+                <td>b8</td>
+                <td>b7</td>
+                <td>b6</td>
+                <td>b5</td>
+                <td>b4</td>
+                <td>b3</td>
+                <td>b2</td>
+                <td>b1</td>
+                <td>Meaning</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td>AAC</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td>TC</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td>ARQC</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td>RFU</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>0</td>
+                <td>0</td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td>Payment System-specific cryptogram</td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td>0</td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td>No advice required</td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>No information given</td>
+            </tr>
+        </table>
+   
+    </div>
+    <br>
+    <p>Table CCD 3: Coding of Cryptogram Information Data</p>
+</body>
+</html>
